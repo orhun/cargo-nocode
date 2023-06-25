@@ -26,7 +26,7 @@ $ cargo-nocode deploy
 
 ### Usage
 
-```
+```sh
 Usage: cargo-nocode <command>
 
 Possible commands:
@@ -39,6 +39,12 @@ Possible commands:
 ### Installation
 
 Just close your eyes and pretend.
+
+Or you can install from crates.io:
+
+```sh
+cargo install cargo-nocode
+```
 
 #### License
 
