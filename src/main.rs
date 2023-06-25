@@ -7,7 +7,7 @@ const USAGE_TEXT: &str = "
 Usage: cargo-nocode <command>
 
 Possible commands:
-- init    initialize a nocode applicaton
+- init    initialize a nocode application
 - build   build the nocode application
 - run     run the nocode application
 - deploy  deploy the nocode application
