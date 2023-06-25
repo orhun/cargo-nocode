@@ -7,7 +7,7 @@ const USAGE_TEXT: &str = "
 Usage: cargo-nocode <command>
 
 Possible commands:
-- init    initialize a nocode applicaton
+- init    initialize a nocode application
 - build   build the nocode application
 - run     run the nocode application
 - deploy  deploy the nocode application
@@ -32,9 +32,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             File::create("nocode.rs")?;
             println!("Created nocode.rs! Now start by writing not any code.");
         }
-        "build" => {}
-        "run" => {}
-        "deploy" => {}
+        "build" | "run" | "deploy" => {}
         _ => usage(),
     }
 
