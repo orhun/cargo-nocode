@@ -32,9 +32,7 @@ fn main() -> Result<(), Box<dyn Error>> {
             File::create("nocode.rs")?;
             println!("Created nocode.rs! Now start by writing not any code.");
         }
-        "build" => {}
-        "run" => {}
-        "deploy" => {}
+        "build" | "run" | "deploy" => {}
         _ => usage(),
     }
 
