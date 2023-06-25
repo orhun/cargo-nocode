@@ -1,12 +1,14 @@
 [package]
 name = "cargo-nocode"
-version = "0.1.0"
+version = "0.1.1"
 description = "Cargo subcommand to easily bootstrap nocode applications. Write nothing; deploy nowhere."
 authors = ["Orhun Parmaksız <orhunparmaksiz@gmail.com>"]
 license = "Apache-2.0"
 readme = "README.md"
 homepage = "https://github.com/orhun/cargo-nocode"
 repository = "https://github.com/orhun/cargo-nocode"
+keywords = ["nocode"]
+categories = ["command-line-utilities"]
 edition = "2021"
 
 [dependencies]
