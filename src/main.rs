@@ -1,4 +1,6 @@
 use std::env;
+use std::error::Error;
+use std::fs::File;
 use std::process;
 
 const USAGE_TEXT: &str = "
@@ -17,7 +19,7 @@ fn usage() {
     process::exit(1)
 }
 
-fn main() {
+fn main() -> Result<(), Box<dyn Error>> {
     let args: Vec<String> = env::args().collect();
 
     if args.len() == 1 {
@@ -27,14 +29,14 @@ fn main() {
     let command = &args[1];
     match command.as_ref() {
         "init" => {
-            println!("Init command executed");
+            File::create("nocode.rs")?;
+            println!("Created nocode.rs! Now start by writing not any code.");
         }
-        "build" => {
-            println!("Build command executed");
-        }
-        "deploy" => {
-            println!("Deploy command executed");
-        }
+        "build" => {}
+        "run" => {}
+        "deploy" => {}
         _ => usage(),
     }
+
+    Ok(())
 }
