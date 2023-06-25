@@ -1,6 +1,6 @@
 [package]
 name = "cargo-nocode"
-version = "0.1.1"
+version = "0.1.2"
 description = "Cargo subcommand to easily bootstrap nocode applications. Write nothing; deploy nowhere."
 authors = ["Orhun Parmaksız <orhunparmaksiz@gmail.com>"]
 license = "Apache-2.0"
