@@ -7,20 +7,20 @@
 ### Quickstart guide
 
 ```sh
-$ cargo-nocode init
+$ cargo nocode init
 # this will create nocode.rs file which follows the nocode guidelines
 # now we're ready to write no code!
 
 $ cat nocode.rs
 # absolutely empty
 
-$ cargo-nocode build
+$ cargo nocode build
 # does nothing
 
-$ cargo-nocode run
+$ cargo nocode run
 # does nothing
 
-$ cargo-nocode deploy
+$ cargo nocode deploy
 # does nothing
 ```
 
